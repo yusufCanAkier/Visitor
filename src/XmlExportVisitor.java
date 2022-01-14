@@ -9,4 +9,8 @@ public class XmlExportVisitor implements IBookExportVisitor{
     public void exportVisit(Encyclopedia encyclopedia) {
         System.out.println(encyclopedia.name + " exported by XmlExportVisitor");
     }
+    @Override
+    public void exportVisit(Newspaper newspaper) {
+        System.out.println(newspaper.name + " exported by XmlExportVisitor");
+    }
 }
